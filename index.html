@@ -1,10 +1,46 @@
-<script src="https://d3js.org/d3.v5.min.js"></script>
+<!doctype html>
+<html lang="en">
+ <head>
+ 	<title> Hello World Assignment-Minkun</title>
+  <style>
+   html {background: #666666; color: white}
+   svg{width:100%;height:auto;}
+   h1 {text-align: center;}
+   h2 {text-align:center;}
+   var svgContainer = d3.select("body").append("svg")
+2                                    .attr("width", 200)
+3                                    .attr("height", 200)
+4                                    .style("border", "white")
+  </style>
+  <script src="http://d3js.org/d3.v5.min.js"></script>
+ </head>
 
-<script>
-  console.log(d3); // test if d3 is loaded
-  // Add an SVG
-  // Add Rectangles
-  // Add Circles
-  // Add Lines
-  // Add Polygons
-</script>
+ <body>
+  <h1>Hello World-Minkun</h1>
+  <h2 style="float: left; width: 50%;">Circle</h2>
+  <h2 style="float: right; width: 50%;">Rectangle</h2>
+  <svg width="1920" height="1080">
+   <circle cx="120" cy="120" r="80" fill="white" stroke="black" stroke-width="3"></circle>
+   <rect x="360" y="360" rx="30" ry="30" width="200" height="200" fill="green" stroke="black" stroke-width="3" stroke-opacity="0.3"></rect>  
+   <ellipse cx="300" cy="300" rx="150" ry="75" fill="orange"></ellipse>
+   <polygon fill="pink" stroke="white" stroke-width="3"
+   	points="320,180
+   	        400,250
+   	        420,300
+            520,280
+            600,240
+            300,160">
+   </polygon>
+   <polyline fill="none" stroke="white" stroke-width="3"
+    points="600,200
+            650,150
+            550,180
+            400,300
+            700,320"> 
+   </polyline>
+  </svg>
+
+
+  <script src="main.js"></script>
+ </body>
+</html>
